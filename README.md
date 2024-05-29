@@ -1,4 +1,11 @@
 # papildoma
+## Užduoties formuluotė:
+
+* Suskaičiuokite, kiek kartų kiekvienas skirtingas žodis pasikartoja Jūsų tekste. Tekstą galite paimti iš bet kur, pvz.: Vikipedijos straipsnis apie Vilnių (geriau kad būtu kitoks tekstas, ne mažiau 1000 žodžių, nereikia traukti straipsnio programiškai, užtenka nukopijuoti ir įkelti į apdorojamą failą). Tuomet realizacijos išoriniame faile išveskite skirtingus žodžius (kableliai, taškai ir kiti skyrybos ženklai nėra žodžiu dalis), kurie pasikartojo dažniau negu 1 kartą, o taip pat ir count'erį, nurodantį kiek kartų konkretus žodis pasikartojo.
+* Sukurkite failą su cross-reference tipo lentelę kurioje būtų nurodyta, kurioje teksto vietoje (kurioje(-iose) teksto eilutėse) kiekvienas iš daugiau negu vieną kartą pasikartojantis žodis buvo paminėtas.
+* URL adresų suradimas Jūsų tekste. Kaip ir pirmos užduoties atveju, tekstą galite paimti iš bet kur, tačiau būtina, kad tame tekste būtų bent keli URL'ai, pateikti "pilnu" https://www.vu.lt/, https://vu.lt/ ar "sutrumpintu" pavidalu: www.vu.lt, vu.lt. Jūsų tikslas, iš to teksto išrinkti visus šiuos URL'us ir gražiai išvesti į failą. Repozitorija turi būti parengta pagal visus ankstesnių darbų galutinėms versijoms galiojančius reikalavimus.
+## Kas padaryta?
+Programa isrenka ir isspausdina zodzius, kurie tekste kartojasi daugiau nei viena karta, tam naudojamas ascoaityvus konteineris ``map<string, vector<int>> zodziuSarasas``, kuris saugo zodzius bei eilutes, kuriose tas zodis kartojasi. Taip pat programa geba atrinkti email adresus, URL ir viska isspausdina i faila ``rez.txt``.
 
 # Naudojimo instrukcija
 1. Parsisiųskite programą iš [versijų puslapio](https://github.com/kamzob/papildoma/tags), o jei kažkas neaišku, pridedu nuorodą: https://blog.hubspot.com/website/download-from-github. Jums reikia šių failų: **makefile, main.cpp, biblioteka.h, funkcijos.cpp, funkcijos.h**
