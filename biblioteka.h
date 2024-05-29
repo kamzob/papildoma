@@ -31,6 +31,8 @@
 #include <utility>
 #include <assert.h>
 #include <map>
+#include <set>
+#include <regex>
 
 
 using std::cout;
@@ -58,6 +60,8 @@ using std::ostream;
 using std::istream;
 using std::accumulate;
 using std::map;
+using std::pair;
+using std::set;
 
 #endif /* biblioteka_h */
 
