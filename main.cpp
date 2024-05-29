@@ -14,15 +14,12 @@ using namespace  std;
 
 int main()
 {
-    string pavadinimas = "vilnius.txt";
-    skaityti(pavadinimas);
-    map<string, string> myDictionary;
+    string pavadinimas = "pa.txt";
+    map<string, vector<int>> zodziuSarasas;
+    vector<string> email;
+    vector<string> URL;
+    skaityti(pavadinimas, zodziuSarasas, email, URL);
+    
 
-    myDictionary.insert(pair<string, string>("zasis", "žąsiukas"));
-    myDictionary.insert(pair<string, string>("banana", "die Banane"));
-    for(auto pair : myDictionary)
-    {
-        cout << pair.first << "-" << pair.second << endl;
-    }
 
 }
